@@ -12,7 +12,7 @@ import AdminRoute from "./AdminRoute";
 import AdminLogin from "../components/AdminLogin";
 import DashboardLayout from "../pages/home/dashboard/DashboardLayout";
 import Dashboard from "../pages/home/dashboard/Dashboard";
-import ManageBooks from "../pages/home/dashboard/manageBooks/ManageBooks.jsx";
+import ManageBooks from "../pages/home/dashboard/ManageBooks/ManageBooks";
 import AddBook from "../pages/home/dashboard/addBook/AddBook";
 import UpdateBook from "../pages/home/dashboard/editbook/UpdateBook";
 
