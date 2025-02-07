@@ -63,19 +63,19 @@ const router=createBrowserRouter([
                 children: [
                     {
                         path:"",
-                        element:<AdminRoute> <h3> <Dashboard/></h3></AdminRoute>
+                        element:<AdminRoute><Dashboard/></AdminRoute>
                     },
                     {
                         path:"add-new-book",
-                        element:<AdminRoute><h3><AddBook/></h3></AdminRoute>
+                        element:<AdminRoute><AddBook/></AdminRoute>
                     },
                     {
                         path:"edit-book/:id",
-                        element:<AdminRoute> <h3><UpdateBook/></h3></AdminRoute>
+                        element:<AdminRoute><UpdateBook/></AdminRoute>
                     },
                     {
                         path:"manage-books",
-                        element: <AdminRoute><h3><ManageBooks/></h3></AdminRoute>
+                        element: <AdminRoute><ManageBooks/></AdminRoute>
                     }
                 ]
             }
