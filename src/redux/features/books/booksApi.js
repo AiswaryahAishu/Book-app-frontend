@@ -2,16 +2,16 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import getBaseUrl from '../../../utils/baseURL';
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: `${getBaseUrl()}/api/books`,  // ✅ Fixed extra `}`
+    baseUrl: `${getBaseUrl()}/api/books`,  // ✅ Fixed potential double slashes
     credentials: 'include',
-    prepareHeaders: (headers) => { // ✅ Changed `Headers` to `headers`
+    prepareHeaders: (headers) => {
         const token = localStorage.getItem('token');
         if (token) {
             headers.set('Authorization', `Bearer ${token}`);
         }
         return headers;
     }
-});
+});;
 
 const booksApi = createApi({
     reducerPath: 'booksApi',
