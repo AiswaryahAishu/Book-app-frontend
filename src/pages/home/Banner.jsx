@@ -1,12 +1,12 @@
 import React from 'react'
-import bannerImg from "../../assets/Banner.png"
+import BannerImg from "../../assets/Banner.png"
 
 const Banner = () => {
   return (
 <div className='flex flex-col md:flex-row-reverse px-20 py-16 justify-between items-center gap-12'>
 
     <div className='md:w-1/2 w-full flex items-center md:justify-end '>
-        <img src={bannerImg} alt="" />
+        <img src={BannerImg} alt="" />
     </div>
 
       <div className='md:w-1/2 w-full'>
